@@ -23,9 +23,9 @@ REPO_ACCOUNT="scblouir"
 ##
 ##  0)  Clones the zeusids repo locally
 ##
-sudo apt install -y git || exit
+sudo apt install -y git || exit 1
 mkdir -p /home/$USER/$REPO
-cd /home/$USER/ && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME || exit
+cd /home/$USER/ && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME || exit 1
 
 
 
@@ -33,6 +33,8 @@ cd /home/$USER/ && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME ||
 ##
 ##  1)  Runs the installer
 ##
-sudo chmod -R 757 $REPO_NAME && $REPO_NAME/scripts/__internal/__installation/__install.sh 0 || printf "\n\nFatal Error: Failed to run __install.sh.\n"
+sudo chmod -R 757 $REPO_NAME && $REPO_NAME/scripts/__internal/__installation/__install.sh 0 || printf "\n\nFatal Error: Failed to run __install.sh.\n" || exit 1
+
+exit 0
 
 
