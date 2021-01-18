@@ -33,6 +33,6 @@ cd /home/$USER/ && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME ||
 ##
 ##  1)  Runs the installer
 ##
-sudo chmod -R 757 $REPO_NAME && $REPO_NAME/scripts/__internal/__installation/__install.sh 0 || printf "\n\nFatal Error: Failed to run __install.sh."
+sudo chmod -R 757 $REPO_NAME && $REPO_NAME/scripts/__internal/__installation/__install.sh 0 || printf "\n\nFatal Error: Failed to run __install.sh.\n"
 
 
