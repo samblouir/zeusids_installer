@@ -3,9 +3,9 @@
 
 
 
-### This script installs zeusids and Nvidia drivers and CUDA tools locally
-### To install zeusids, open the terminal (CTRL+ALT+T),
-### cd to the directory this file is located in, and enter this command:
+### This script installs zeusids with Nvidia drivers, CUDA tools, and other required packages locally.
+### To run this, open the terminal (CTRL+ALT+T), cd to the directory this file is located in,
+### and enter this command:
 ###
 ###		sudo chmod +x ./zeusids.sh && ./zeusids.sh
 
@@ -25,7 +25,7 @@ REPO_ACCOUNT="scblouir"
 ##
 sudo apt install -y git || exit
 mkdir -p /home/$USER/$REPO
-cd /home/$USER/ && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME
+cd /home/$USER/ && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME || exit
 
 
 
