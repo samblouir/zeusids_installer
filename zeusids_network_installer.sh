@@ -7,7 +7,7 @@
 ### To run this, open the terminal (CTRL+ALT+T), cd to the directory this file is located in,
 ### and enter this command:
 ###
-###		sudo chmod +x ./zeusids.sh && ./zeusids.sh
+###		sudo chmod +x ./zeusids_network_installer.sh && ./zeusids_network_installer.sh
 
 
 
