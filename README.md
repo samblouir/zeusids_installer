@@ -1,7 +1,7 @@
 # zeusids_installer
 Pulls down an image of the Zeus Intrusion Detection System and installs Docker, NVIDIA drivers, CUDA 11.2, Tensorflow, PyTorch, etc...
 
-Designed for Ubuntu 20.04. Versions for Ubuntu 16.04 and 18.04 available (just message me)!
+Designed for Ubuntu 20.04. Versions for Ubuntu 16.04 and 18.04 available. Just message me!
 
 To run this, download zeusids_installer.sh, open the terminal (CTRL+ALT+T),
 cd to the directory this file is located in, and run this command:
