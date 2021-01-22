@@ -21,6 +21,10 @@ REPO_NAME="zeusids"
 REPO_ACCOUNT="scblouir"
 
 ask_if_user_wants_to_rm_install_dir(){
+
+	
+	
+	#printf "\nYou said: \"$USER_ANSWER\"\n"
 	
 	read -p "The directory already exists. Perform rm -r to continue installation? y/N: " USER_ANSWER
 	case ${USER_ANSWER:0:1} in
@@ -38,7 +42,8 @@ ask_if_user_wants_to_rm_install_dir(){
 ##
 ##  0)  Clones the zeusids repo locally
 ##
-sudo apt install -y git || exit 1
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y git python-is-python3 inotify-tools gnome-tweaks || exit 1
 mkdir /home/$USER/$REPO_NAME || ask_if_user_wants_to_rm_install_dir
 cd /home/$USER/ && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME || exit 1
 
@@ -52,4 +57,5 @@ sudo chmod -R 757 $REPO_NAME && $REPO_NAME/scripts/__internal/__installation/__i
 || printf "\n\nFatal Error: Failed to run __install.sh.\n" || exit 1
 
 exit 0
+
 
