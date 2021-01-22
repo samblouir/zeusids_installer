@@ -18,7 +18,7 @@
 ## Constants (Don't change these!)
 ##
 REPO_NAME="zeusids"
-REPO_ACCOUNT="scblouir"
+REPO_ACCOUNT="samblouir"
 
 ask_if_user_wants_to_rm_install_dir(){
 
