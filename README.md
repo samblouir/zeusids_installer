@@ -1,6 +1,6 @@
 # zeusids_installer
 
-Zeus Intrusion Detection System. This repository is being constantly updated for research on generalizing against detecting (and stopping) network-based malicious attacks.
+Zeus Intrusion Detection System. The zeusids repository is being updated nightly for research on generalizing against detecting (and stopping) network-based malicious attacks.
 
 # Usage
 
