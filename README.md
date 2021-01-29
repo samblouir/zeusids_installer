@@ -20,9 +20,9 @@ A large system consisting of:
 
 --PyTorch and Tensorflow nightlies, with a number of supporting packages.
 
---Build and install Python 3.9.1 from source.
+--Build and install Python 3.8.7 from source.
 
---Pulls down the ~13GB zeusids image via Docker.
+--Pulls down multiple zeusids images via Docker.
 
 --Optionally installs Lambdastack onto your computer to run CUDA outside Docker.
 
