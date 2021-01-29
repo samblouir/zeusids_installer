@@ -15,7 +15,7 @@ Type "zeus help" into the terminal to view available commands.
 
 A large system consisting of:
 
---Zeus sockets, a concurrent network-based communication library intended for assigning jobs and sending model weights and other instructions to distributed workers over the internet or LAN built off NNG. Shared memory for zero-overhead network read and writes for the main process.
+--Zeus sockets, a concurrent network-based communication library intended for assigning jobs and sending model weights and other instructions to distributed workers over the internet or LAN built off of primitive sockets from nanomsg. Shared memory for zero-overhead network read and writes for the main process.
 
 --Automated Metasploit attacks on VMs of XP, Vista, and Ubuntu.
 
