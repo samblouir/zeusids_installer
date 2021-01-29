@@ -2,6 +2,10 @@
 
 Zeus Intrusion Detection System. The zeusids repository is updated nightly for research on generalizing against detecting (and stopping) network-based malicious attacks.
 
+Installs this repo locally:
+
+https://github.com/samblouir/zeusids
+
 # Usage
 
 Type "zeus help" into the terminal to view available commands.
