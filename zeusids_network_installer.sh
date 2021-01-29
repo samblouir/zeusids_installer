@@ -15,18 +15,20 @@
 
 
 ##
-## Constants (Don't change these!)
+## Variables for installation
 ##
 REPO_NAME="zeusids"
 REPO_ACCOUNT="samblouir"
+ZEUSIDS_INSTALL_DIR="/home/$USER"
 
 ## If the install directory already exists, confirms with the user if they want to remove it.
+## Any answer except 'y' or 'Y' will immediately exit the program with the error code 1.
 ask_if_user_wants_to_rm_install_dir(){
 	
 	read -p "The directory (~/$REPO_NAME) already exists. Perform rm -r to continue installation? y/N: " USER_ANSWER
 	case ${USER_ANSWER:0:1} in
 	    y|Y )
-		sudo rm -r /home/$USER/$REPO_NAME && mkdir /home/$USER/$REPO_NAME || exit 1
+		sudo rm -r $ZEUSIDS_INSTALL_DIR/$REPO_NAME && mkdir $ZEUSIDS_INSTALL_DIR/$REPO_NAME || exit 1
 	    ;;
 	    * )
 		exit 1
@@ -40,8 +42,8 @@ ask_if_user_wants_to_rm_install_dir(){
 ##
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git python-is-python3 inotify-tools gnome-tweaks || exit 1
-mkdir /home/$USER/$REPO_NAME || ask_if_user_wants_to_rm_install_dir
-cd /home/$USER/ && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME || exit 1
+mkdir $ZEUSIDS_INSTALL_DIR/$REPO_NAME || ask_if_user_wants_to_rm_install_dir
+cd $ZEUSIDS_INSTALL_DIR && sudo git clone https://github.com/$REPO_ACCOUNT/$REPO_NAME || exit 1
 
 
 
