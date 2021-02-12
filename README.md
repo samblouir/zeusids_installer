@@ -7,7 +7,7 @@ Installs this repo locally:
 https://github.com/samblouir/zeusids
 
 
-# Installation Instructions
+# Instructions
 
 To install, just download zeusids_installer.sh, open the terminal (CTRL+ALT+T),
 cd to the directory this file is located in, and run this command:
